@@ -6,7 +6,7 @@ export const registerApi = async (user, avatar, rejectWithValue) => {
 
   try {
     const { data } = await axios.post(
-      `/api/v1/regiser`,
+      `/api/v1/register`,
       { name, email, password, avatar },
       {
         headers: {
