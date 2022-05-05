@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .scale-anim {
+    @apply active:scale-75 duration-300 cursor-pointer;
+  }
+  .form-input {
+    @apply py-3 text-sm px-5 rounded-md w-[16rem] sm:w-[20rem] outline-none bg-gray-700;
+  }
+  .signinButton {
+    @apply bg-gray-100 py-2 px-4 outline-none text-sm rounded-lg;
+  }
+  .userButton {
+    @apply rounded-lg whitespace-pre scale-anim bg-gradient-to-tr from-[#FF8489] to-[#D5ADC8] px-4 py-2;
+  }
+  .line {
+    @apply block cursor-pointer relative after:w-full
+   after:absolute after:left-0 after:bottom-[-10px] after:bg-gray-500 after:h-[2px] after:rounded-xl after:duration-300;
+  }
+  .inputButton {
+    @apply border-b-2 outline-none w-full md:w-[18rem] text-center mx-auto text-sm block py-2;
+  }
+  .nav {
+    @apply bg-white shadow-lg z-50 h-[70px] mb-[20px] sticky top-0 right-0 left-0;
+  }
+  .slidePost{
+    @apply transform translate-x-[10rem]
+  }
+}
+
+.drop {
+  filter: drop-shadow(3px 3px 10px rgb(125, 132, 136));
+}
+
+.section {
+  height: calc(100vh - 90px);
+}
